@@ -46,7 +46,7 @@ int PT2258::init(void)
     // initialize device
     writeI2CChar(SYSTEM_RESET);
 
-    // set channell volumes to zero
+    // set channel volumes to zero
     for(int chno=0; chno<6; chno++){
       Wire.beginTransmission(0x88 >> 1); // transmit to device 0x88, PT2258
       Wire.write(channell_address01[chno] | (HEX2BCD(channelVolume)   &  0x0f));   
