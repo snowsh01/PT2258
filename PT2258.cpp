@@ -5,7 +5,7 @@
  */ 
 
 #include <arduino.h>
-#include <wire.h>
+#include <Wire.h>
 #include <PT2258.h>
 
 unsigned char channell_address01[6] = 
